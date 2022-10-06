@@ -1,0 +1,210 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2  {
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 50px;
+}
+table, th, td {
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+.tb {
+    background-color: grey;
+    color: white;
+}
+.tc {
+    background-color: white;
+    color: black;
+    width: 90%;
+}
+.hd {
+    background-color: black;
+    color: white;
+}
+form {
+    color: black;
+    border-color: 1px solid grey;
+    border-radius: 50px 50px;
+}
+.fi {
+    width: 200px;
+    padding: 10px;
+    border-radius: 180px;
+    margin: 12px;
+}
+.ft {
+    width: 90%;
+    padding: 10px;
+    border-radius: 160px;
+    margin: 12px;
+}
+.btn {
+    margin-left: 12px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 80px;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    cursor:pointer;
+}
+
+.ani {
+    text-align: center;
+    text-shadow: 0px 2px 2px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    animation-name: tt;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes tt {
+    from {color: red;}
+    to {color: yellow;}
+}
+.cl1 {
+    text-align: center;
+    line-height: 35px;
+    background-color: black;
+    color: white;
+    overflow: auto;
+}
+.cl2 {
+    text-align: center;
+    line-height: 5px;
+    background-color: burlywood;
+    color: black;
+    overflow: auto;
+}
+.cl3 {
+    text-align: center;
+    line-height: 15px;
+    background-color: grey;
+    color: white;
+    overflow: auto;
+}
+.cl4 {
+    text-align: center;
+    line-height: 25px;
+    background-color: rgb(114, 114, 237);
+    color: white;
+    overflow: auto;
+}
+.cl5 {
+    text-align: left;
+    line-height: 25px;
+    background-color: blueviolet;
+    color: white;
+    overflow: auto;
+    padding-left: 60px;
+}
+.h1 {
+    padding: 40px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    animation: top 3s infinite alternate;
+}
+@keyframes top {
+    from {color: navajowhite;}
+    to {color: navy;}
+}
+.t1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 180px;
+}
+.t2 {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+    border-radius: 180px;
+}
+.t3 {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    border-radius: 180px;
+}
+.t4 {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    border-radius: 180px;
+    margin-bottom: 38%;
+}
+.t1:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+.t2:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+.t3:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.t4:hover {
+    background-color: rgb(51, 92, 51);
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"] {
+    float: left;
+}
+[class*="col-"] {
+    width: 100%;
+}
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

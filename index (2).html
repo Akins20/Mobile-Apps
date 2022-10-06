@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Home page</div>
+      </div>
+      <div class="app-content">
+        <h1>My CV App</h1>
+    <div class="row">
+        <div class="column side">
+            <div class="contain">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="01c.jpg" style="width:100%" height="400px">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="03c.jpg" style="width:100%" height="400px">
+                      <div class="text">Caption Two</div>
+                    </div>                    
+                    <div class="mySlides fade">
+                      <div class"numbertext">3 / 5</div>
+                      <img src="05.jpg" style="width:100%" height="250px">
+                      <div class="text">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="04.jpeg" style="width:100%" height="400px">
+                        <div class="text">Caption Two</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="02c.jpg" style="width:100%" height="350px">
+                        <div class="text">Caption Two</div>
+                      </div>                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>                   
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                <h3>ABOUT ME</h3>
+                <p>I'm Ogunbiyi Elijah Akintunde, a
+                    300level student of the Federal 
+                    University Of Technology Akure, 
+                    studying Information & Communication
+                    Technology.
+                    I love everything gadgets and music, 
+                    learning to build web pages has been 
+                    wonderful and I wish to continue in that 
+                    journey for as long as possible.
+                    I'm a great team player and really great at 
+                    working under pressure.
+                </p>
+                <h3>CONTACT ME</h3>
+                <p>Phone Number: 09076320678</p>
+                <p>E-mail: ogunbiye@gmail.com</p>
+                <p>Address: 6, Ayodeji Akintayo Street,
+                    Off Custom Bus/Stop, Abaranje Road,
+                    Ikotun, Lagos State.</p>
+            </div>
+        </div>
+        <div class="column main">
+            <div style="padding-left: 20px;">
+                <h2>OGUNBIYI ELIJAH AKINTUNDE</h2>
+                <h4>MOBILE APP TRAINEE DEVELOPER</h4>
+                <h4><u>SKILLS</u></h4>
+                <p>HTML</p>
+                <div id="mySkill">
+                    <div class="htm">85%</div>
+                </div>
+                <p>CSS</p>
+                <div id="mySkill">
+                    <div class="css">70%</div>
+                </div>
+                <p>JAVASCRIPT</p>
+                <div id="mySkill">
+                    <div class="javascript">40%</div>
+                </div>
+                <h4><u>EDUCATION</u></h4>
+                <p>2018 - Till date <span class="vl"></span>
+                    Information & Communication Technology <span class="vl"></span>
+                    Federal University Of Technology Akure
+                </p>
+                <p>2011 - 2017 <span class="vl"></span>
+                    Mid-school <span class="vl"></span>
+                    Sorek High School
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+        <div class="app-section">
+          <div class="app-button" data-target="page2">Go to Page 2</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="page2">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page 2</div>
+      </div>
+      <div class="app-content">
+        <h1 class="ani">Hello World!</h1>
+        <h2>Creating Tables</h2>
+        <table style="width: 100%;">
+            <tr class="hd">
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Race</th>
+                <th>Language</th>
+            </tr>
+            <tr class="tb">
+                <td>1</td>
+                <td>Ogunbiyi Elijah</td>
+                <td>Black</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ogunbiyi Peter</td>
+                <td>Black African</td>
+                <td>English/Yoruba</td>
+            </tr>
+            <tr class="tb">
+                <td>3</td>
+                <td>Ryan Drummond</td>
+                <td>White</td>
+                <td>English UK</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Michael Faraday</td>
+                <td>Null</td>
+                <td>Unknown</td>
+            </tr>
+        </table>
+        <h2>Forms</h2>
+        <form target="_blank" action="#">
+            <fieldset>
+                <legend>Log In</legend>
+                <input type="text" placeholder="Enter Your Username"
+                name="usernm" class="fi" required></br>
+                <input type="password" placeholder="Enter Your Password" 
+                name="psw" class="fi" required></br>
+                <button class="btn">Log In</button>
+            </fieldset>
+        </form>
+        <div class="row">
+            <div class="col-s-6">
+                <div class="cl1">
+                    <h3 class="h1">My Logo</h3>
+                    <p class="t1">Home</p>
+                    <p class="t2">About Me</p>
+                    <p class="t3">My Work</p>
+                    <p class="t4">Contact</p>
+                </div>
+                <div class="cl2">
+                    <h3 class="h1">My Work</h3>
+                    <p style="padding: 20px; margin-bottom:15%;">Take a look at some of my Projects</p>
+                    <p style="margin-bottom:30%;">Awesome aren't I?</p>
+                </div>
+                <div class="cl3">
+                    <h3 class="h1">Swing By</h3>
+                    <p style="line-height: 25px;">...let's grab a drink, or whatever.</p>
+                    <p style="line-height: 25px;">09076320678</p>
+                    <p style="line-height: 25px; margin-bottom: 25%;">ogunbiye@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-s-6">
+                <div class="cl4">
+                    <h3 class="h1">About Me</h3>
+                    <img src="01c.jpg" style="border-radius:180px; width: 50%; height: 30%;">
+                    <p>I'm Ogunbiyi Elijah Akintunde, 
+                        a 300level student of The Federal University 
+                        of Technology Akure studying Information 
+                        and Communication Technology.
+                    </p>
+                </div>
+                <div class="cl5">
+                    <h3 class="h1">Contact</h3>
+                    <p>GET IN TOUCH</p>
+                    <div class="tc">
+                        <form accept="#" target="_blank" method="post">
+                            <input type="text" name="name" 
+                            placeholder="Enter Your Name" class="ft" required></br>
+                            <input type="email" name="email" class="ft" 
+                            placeholder="Enter Your E-mail" required></br>
+                            <input type="text" name="msg" class="ft" 
+                            placeholder="What's Your Message?"></br>
+                        </form>
+                    </div>
+                    <button class="btn" style="margin-top:2%; 
+                    margin-bottom: 5%;">Submit</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="app-page dark-page" data-page="viewer">
+        <div class="app-topbar">
+          <div class="left app-button" data-back data-autotitle></div>
+          <div class="app-title">Viewer</div>
+        </div>
+        <div class="app-content"></div>
+      </div>
+    </div>
+
+    <script src="zepto.js"></script>
+    <script src="app.min.js"></script>
+    <script src="http://cdn.kik.com/photo-viewer/1/photo-viewer.js"></script>
+    <script>
+      App.controller('home', function (page) {
+        // put stuff here
+      });
+
+      App.controller('page2', function (page) {
+        // put stuff here
+      });
+
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+
+      App.controller('viewer', function (page, data) {
+      var photoViewer = new PhotoViewer(page, data.urls);
+      });
+
+      App.load('viewer', {
+      urls: [
+        'http://i.imgur.com/yDK68Ff.jpg',
+        'http://i.imgur.com/rKIESYd.jpg',
+        'http://i.imgur.com/OTaodxO.jpg'
+      ]
+      });
+    </script>
+  </body>
+</html>

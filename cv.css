@@ -1,0 +1,166 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.column {
+  float: left;
+}
+.column.side {
+  width: 25%;
+}
+.column.main {
+  width: 75%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+    }
+}
+.contain {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.bar {
+    width: 400px;
+    background-color: antiquewhite;
+}
+.htm {
+    width: 0%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+    animation: htm 4s 1s forwards;
+}
+@keyframes htm {
+    from {width: 0%; background-color: grey;}
+    to {width: 85%; background-color: black;}
+}
+.css {
+    width: 0%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+    animation: css 4s 1s forwards;
+}
+@keyframes css {
+    from {width: 0%; background-color: grey;}
+    to {width: 70%; background-color: black;}
+}
+.javascript {
+    width: 0%;
+    counter-reset: my-counter;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+    animation: javascript 4s 1s forwards;
+}
+@keyframes javascript {
+    from {width: 0%; 
+        background-color: grey;}
+    to {width: 40%; 
+        background-color: black;}
+}
+.vl {
+    border-left: 2px solid black;
+    height: 10px;
+    padding-right: 10px;
+}
+img {
+    border-radius: 180px;
+    vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#mySkill {
+    width: 80%;
+    background-color: antiquewhite;
+}
